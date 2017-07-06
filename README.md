@@ -18,4 +18,4 @@
 - x Bootstrap -> formatting
 
 ## Refactor:
-- Refactor user association integration test in post_spec
+- x Refactor user association integration test in post_spec
