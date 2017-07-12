@@ -23,3 +23,4 @@
 ## Refactor:
 - x Refactor user association integration test in post_spec
 - refactor posts/_form for admin user with status
+- fix post_spec.rb line 82
