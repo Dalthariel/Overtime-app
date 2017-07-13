@@ -10,8 +10,8 @@
 ## Features:
 - Approval Workflow
 - SMS Sending -> link to approval or overtime input
-- Administrate admin dashboard
-- Block non admin and guest users
+- x Administrate admin dashboard
+- x Block non admin and guest users
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
@@ -24,3 +24,4 @@
 - x Refactor user association integration test in post_spec
 - refactor posts/_form for admin user with status
 - fix post_spec.rb line 82
+- Fix post_spec.rb line 52 to have correct user reference and not require update
