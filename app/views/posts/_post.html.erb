@@ -12,7 +12,9 @@
 		<%= truncate(post.rationale) %>
 	</td>
 	<td>
-		<%= post.status %>
+		<span class="label label-primary" >
+			<%= status_label post.status %>
+		</span>
 	</td>
 	<td>
 		<%= link_to 'Edit', edit_post_path(post), id: "edit_#{post.id}" %>
