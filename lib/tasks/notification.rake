@@ -9,10 +9,6 @@ namespace :notification do
   	# 	#skip admin user
   	# 	SmsTool.send_sms(user, phone)
   	# end
-
-  	# no spaces or dashes or parentheses
-  	# exactly 10 characters
-  	# all characters must be a numbers
   end
 
 end
