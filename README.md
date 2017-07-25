@@ -13,7 +13,7 @@
 - SMS Sending -> link to approval or overtime input -> integrate with Heroku scheduler
 - x Administrate admin dashboard
 - x Block non admin and guest users
-- Email summary to managers for approval
+- x Email summary to managers for approval
 - x Needs to be documented if employee did not log overtime
 
 ## To Do:
