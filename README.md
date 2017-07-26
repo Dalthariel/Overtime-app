@@ -13,6 +13,6 @@
 - x SMS Sending -> link to approval or overtime input -> integrate with Heroku scheduler
 - x Administrate admin dashboard
 - x Block non admin and guest users
-- Email summary to managers for approval (need to find an email program for my domain)
+- x Email summary to managers for approval (need to find an email program for my domain)
 - x Needs to be documented if employee did not log overtime
 - Create Audit Log for each text message
