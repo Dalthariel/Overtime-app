@@ -30,4 +30,5 @@ Rails.application.configure do
 
   config.active_record.dump_schema_after_migration = false
   config.serve_static_assets = true
+  config.action_mailer.default_url_options = { :host => "dlh-overtime-webapp.herokuapp.com" }
 end
