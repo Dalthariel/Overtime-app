@@ -2,12 +2,16 @@ namespace :notification do
   desc "Sends SMS notification to employees asking them to log if they had overtime or not"
   task sms: :environment do
     if Time.now.sunday?
-      # Schedule to run Sunday at 5pm
-      # Iterate over all employees
+      employees = Employee.all
+      notification_message = "Please log into the overtime management dashboard to submit overtime for approval, or confirm your hours for last week: https://dlh-overtime-webapp.herokuapp.com"
+      employees.each do |employee|
+        SmsTool.send_sms(number: employee.phone, message: notification_message)
+      end
+      # ✔ Schedule to run Sunday at 5pm
+      # ✔ Iterate over all employees
       # Skip AdminUsers
-      # Send a message w/ instructions and a link to log time
-      # User.all.each do |user, phone|
-      #   #skip admin user
+      # ✔ Send a message w/ instructions and a link to log time
+      # ✔ User.all.each do |user, phone|
       #   SmsTool.send_sms(user, phone)
       # end
     end
@@ -16,10 +20,7 @@ namespace :notification do
 
   desc "Sends mail notifications to managers (admin users) each day to inform of pending overtime requests"
   task manager_email: :environment do
-    # 1. Iterate over list of pending overtime requests (submitted, not approved or rejected)
-    # 2. Check to see if there are any requests
-    # 3. Iterate over the list of admin users/managers
-    # 4. Send the email to each Admin
+
     submitted_posts = Post.submitted
     admin_users = AdminUser.all
 
