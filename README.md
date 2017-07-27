@@ -16,7 +16,7 @@
 - x Email summary to managers for approval (need to find an email program for my domain)
 - x Needs to be documented if employee did not log overtime
 - x Create Audit Log for each text message
-- Need to update end_date when confirmed
+- x Need to update end_date when confirmed
 - Need to update audit log status when an overtime item is rejected
 - Update buttons on employee homepage so they show on mobile
 - Update buttons to include timespan
@@ -25,3 +25,5 @@
 - fix bug in admin dashboard when logging out
 - implement honeybadger for error reporting
 - implement new relic for keeping site alive
+
+- fix it so admins can't edit the overtime request submissions, just approve or reject
